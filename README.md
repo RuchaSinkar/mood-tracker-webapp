@@ -19,8 +19,8 @@ Follow these steps to set up the project locally:
 
 -Clone the repository:  
 bash  
-git clone https://github.com/your-username/mood-tracker.git  
-cd mood-tracker  
+git clone https://github.com/RuchaSinkar/mood-tracker-webapp.git  
+cd mood-tracker-webapp  
 
 -Install dependencies:  
 bash  
