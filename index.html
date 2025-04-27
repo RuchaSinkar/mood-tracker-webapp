@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Mood Tracker</h2>
+        <p>Track your daily mood</p>
+        
+        <div class="mood-selector">
+            <button class="mood-btn happy" data-mood="Happy">
+                <i class="fa-solid fa-face-smile"></i>
+            </button>
+            <button class="mood-btn sad" data-mood="Sad">
+                <i class="fa-solid fa-face-frown"></i>
+            </button>
+            <button class="mood-btn angry" data-mood="Angry">
+                <i class="fa-solid fa-face-angry"></i>
+            </button>
+            <button class="mood-btn excited" data-mood="Excited">
+                <i class="fa-solid fa-face-grin-stars"></i>
+            </button>
+            <button class="mood-btn fear" data-mood="Fear">
+                <i class="fa-solid fa-face-sad-tear"></i>
+            </button>
+        </div>
+
+        <textarea id="note" placeholder="Write about your mood..."></textarea>
+        <button id="save-btn">Save</button>
+        <h2>Today's Mood</h2>
+        <div class="message hidden"></div>
+        <canvas id="moodChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
